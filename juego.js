@@ -20,7 +20,7 @@ function jugarRonda() {
     return;
   }
 
-  console.log(`\n🎯 RONDA ${ronda}`);
+  console.log(`\n RONDA ${ronda}`);
 
   rl.question("Jugador 1 presiona ENTER para lanzar el dado ", () => {
     let dado1 = lanzarDado();
@@ -42,16 +42,16 @@ function jugarRonda() {
 }
 
 function mostrarGanador() {
-  console.log("\n🏁 RESULTADO FINAL");
+  console.log("\n RESULTADO FINAL");
 
   if (puntajeJugador1 > puntajeJugador2) {
-    console.log("🏆 El Jugador 1 es la monda ganó");
+    console.log(" El Jugador 1 es la monda ganó");
   } else if (puntajeJugador2 > puntajeJugador1) {
-    console.log("🏆 El Jugador 2 es la monda ganó");
+    console.log(" El Jugador 2 es la monda ganó");
   } else {
-    console.log("🤝 Empatais");
+    console.log(" Empatais");
   }
 }
 
-console.log("🎲 JUEGO DE DADOS");
+console.log(" JUEGO DE DADOS");
 jugarRonda();

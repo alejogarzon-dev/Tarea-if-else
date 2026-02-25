@@ -52,10 +52,10 @@ function hacerPregunta() {
 
   rl.question("Tu respuesta (a, b, c o d): ", (respuesta) => {
     if (respuesta === p.correcta) {
-      console.log("✅ Correcto");
+      console.log(" Correcto");
       puntaje++;
     } else {
-      console.log("❌ Incorrecto");
+      console.log("Incorrecto");
     }
 
     indicePregunta++;
@@ -64,10 +64,10 @@ function hacerPregunta() {
 }
 
 function mostrarResultado() {
-  console.log("\n📊 RESULTADO FINAL");
+  console.log("\n RESULTADO FINAL");
   console.log(`Respuestas correctas: ${puntaje} de 5`);
   console.log(`Nota final: ${puntaje}`);
 }
 
-console.log("📝 QUIZ DE TRADUCCIÓN ESPAÑOL → INGLÉS");
+console.log(" QUIZ DE TRADUCCIÓN ESPAÑOL → INGLÉS");
 hacerPregunta();

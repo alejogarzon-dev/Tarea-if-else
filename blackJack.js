@@ -51,7 +51,7 @@ function turnoJugador() {
   console.log("Tu puntaje:", puntajeJugador);
 
   if (puntajeJugador > 21) {
-    console.log("Te pasaste de 21. Pierdes ❌");
+    console.log("Te pasaste de 21. Pierdes ");
     rl.close();
     return;
   }
@@ -89,15 +89,15 @@ function determinarGanador() {
   console.log("\n--- Resultado final ---");
 
   if (puntajeDealer > 21) {
-    console.log("El dealer se pasó. ¡Ganaste! 🎉");
+    console.log("El dealer se pasó. ¡Ganaste!");
   } else if (puntajeJugador > 21) {
-    console.log("Te pasaste. Pierdes ❌");
+    console.log("Te pasaste. Pierdes ");
   } else if (puntajeJugador > puntajeDealer) {
-    console.log("¡Ganaste eres un duro! 🎉");
+    console.log("¡Ganaste eres un duro! ");
   } else if (puntajeJugador < puntajeDealer) {
-    console.log("Perdiste valeee 😢");
+    console.log("Perdiste valeee ");
   } else {
-    console.log("Empate mmmm 🤝");
+    console.log("Empate mmmm ");
   }
 }
 function ajustarAs(cartas, puntaje) {
